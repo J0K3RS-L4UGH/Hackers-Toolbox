@@ -1,5 +1,6 @@
 # Hacker-Tools
 A collection of tools for ethical/white hat hackers.  
+This does not require root 
 **Please do not use for malicious purposes**
 **Please check how legal these tools are in your country**
 
@@ -13,6 +14,6 @@ A collection of tools for ethical/white hat hackers.
 #### Hashcat
 Hashcat is a password encrypting and cracking tool. For how to use it go to https://geekflare.com/password-cracking-with-hashcat/.
 
-### Network Scanning
+### Network Scanning:
 #### Nmap
-
+Nmap is a port & network scanning tool, most commonly used in information gathering. [How to use Nmap](https://www.varonis.com/blog/nmap-commands)
