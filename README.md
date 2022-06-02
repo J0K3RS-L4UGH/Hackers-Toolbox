@@ -4,8 +4,7 @@ A collection of tools for ethical/white hat hackers.
 
 ### To Setup this in terminal, follow the below steps:  
 1. To install this in terminal, use the command ```git clone https://github.com/J0K3RS-L4UGH/Hacker-Tools/```
-2. To install all the required packages, use the command ```sudo cat 'directory to be installed in' | xargs sudo apt-get ins
-tall```
+2. To install all the required packages, use the command ```sudo cat 'directory to be installed in' | xargs sudo apt-get install```
 
 ### Password cracking:
 #### Hashcat
