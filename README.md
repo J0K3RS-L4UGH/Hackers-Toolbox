@@ -1,6 +1,5 @@
 # Hackers-Toolbox
-A collection of tools for ethical/white hat hackers.  
-This does not require root and is just linux terminal-based.  
+A collection of tools for ethical/white hat hackers.    
 **Please do not use for malicious purposes.**  
 **Please check how legal these tools are in your country.**  
 
