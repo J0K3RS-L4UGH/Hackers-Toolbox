@@ -1,4 +1,4 @@
-# Hacker-Tools
+# Hackers-Toolbox
 A collection of tools for ethical/white hat hackers.  
 This does not require root and is just linux terminal-based.  
 **Please do not use for malicious purposes.**  
@@ -7,7 +7,7 @@ This does not require root and is just linux terminal-based.
 ## Thank you to everyone who made these tools.
 
 ### To use this in terminal, follow the below steps:  
-1. To install this in terminal, use the command ```git clone https://github.com/J0K3RS-L4UGH/Hacker-Tools/```
+1. To install this in terminal, use the command ```git clone https://github.com/J0K3RS-L4UGH/Hackers-Toolbox```
 2. To install all the required packages, use the command ```sudo cat 'directory to be installed in' | xargs sudo apt-get install```
 
 ### Password cracking:
