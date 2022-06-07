@@ -20,3 +20,7 @@ Nmap is a port & network scanning tool, most commonly used in information gather
 ### SQL Injections:
 #### SQLmap
 SQLmap is a tool which finds and esxploits SQL injection flaws in a website. [How to use SQLmap](https://hackertarget.com/sqlmap-tutorial/)
+
+### Reverse Shells
+#### NetCat
+NetCat is a computer networking utility tool, which can also be used to make a reverse shell. [Reverse Shell with NetCat](https://www.google.com/url?sa=t&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjD-8iMkJv4AhUThlwKHcDnBDMQFnoECAYQAQ&url=https%3A%2F%2Fwww.geeksforgeeks.org%2Fhow-to-create-reverse-shells-with-netcat-in-kali-linux%2F&usg=AOvVaw1L3C57Ht6a_05ZsNgwIQ9w) 
