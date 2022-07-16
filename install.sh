@@ -1,3 +1,5 @@
+sudo apt-get update
+
 sudo apt-get install whois -y
 sudo apt-get install sqlmap -y
 sudo apt-get install netcat -y
