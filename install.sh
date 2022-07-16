@@ -21,4 +21,8 @@ sudo apt-get install hydra -y
 mkdir .sherlock
 cd .sherlock
 git clone https://github.com/sherlock-project/sherlock.git
+cd sherlock
+pip3 install -r requirements.txt
+pip freeze > requirements.txt
+cd ..
 cd ..
