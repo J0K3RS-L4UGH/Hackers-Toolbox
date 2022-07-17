@@ -18,6 +18,8 @@ sudo apt-get install john -y
 
 sudo apt-get install hydra -y
 
+sudo apt-get install wifite -y
+
 mkdir .sherlock
 cd .sherlock
 git clone https://github.com/sherlock-project/sherlock.git
