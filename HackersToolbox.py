@@ -85,11 +85,15 @@ print(f'\t{bcolors.OKCYAN}SQLMap{bcolors.ENDC}')
 print(f'{bcolors.OKGREEN}[5] WiFi Hacking:{bcolors.ENDC}')
 print(f'\t{bcolors.OKCYAN}Wifite{bcolors.ENDC}')
 
+# wordlist gens
+print(f'{bcolors.OKGREEN}[6] Wordlist Generators:{bcolors.ENDC}')
+print(f'\t{bcolors.OKCYAN}Crunch\n\tCupp{bcolors.ENDC}')
+
 # About
-print(f'{bcolors.OKGREEN}[6] About{bcolors.ENDC}')
+print(f'{bcolors.OKGREEN}[7] About{bcolors.ENDC}')
 
 # Exit
-print(f'{bcolors.OKGREEN}[7] Exit{bcolors.ENDC}')
+print(f'{bcolors.OKGREEN}[8] Exit{bcolors.ENDC}')
 
 # asking what type of tool they want to use
 first = input('What type of tool would you like to use?:\n')
@@ -132,41 +136,18 @@ if first == '1':
 if first == '2':
     os.system('clear')
     print(f'{bcolors.OKGREEN}Password Attacks:{bcolors.ENDC}')
-    print(f'\t{bcolors.OKCYAN}[1] Crunch')
-    print(
-        f'\t[2] HashCat\n\t[3] Cupp\n\t[4] John the Ripper\n\t[5] Hydra{bcolors.ENDC}')
+    print(f'\t{bcolors.OKCYAN}[1] HashCat\n\t[2] John the Ripper\n\t[3] Hydra{bcolors.ENDC}')
     idk2 = input('What tool would you like to use?:\n')
 
-    if idk2 == '1':
-
-        # if crunch is selected
-        os.system('clear')
-        crunchmin = input(
-            'What is the minimum amount of characters you would like to include in 1 password?: ')
-        crunchmax = input(
-            'What is the maximum amount of characters you would like to include in 1 password?: ')
-        crunchchar = input(
-            'What characters would you like to have in the wordlist? (i.e. abc123)?: ')
-        crunchname = input(
-            'What file would you like the wordlist to be stored in? (Please include the file extention)(i.e. wordlist.txt): ')
-        os.system('clear')
-        os.system('crunch ' + crunchmin + ' ' + crunchmax +
-                  ' ' + crunchchar + ' -o ' + crunchname)
-
 # if hashcat is selected
-    if idk2 == '2':
+    if idk2 == '1':
         os.system('clear')
         hashstuff = input(
             'What HashCat command would you like to run? (Usage: hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]...):\n')
         os.system('clear')
         os.system(hashstuff)
 
-# if cupp is selected
-    if idk2 == '3':
-        os.system('clear')
-        os.system('cupp -i')
-
-    if idk2 == '4':
+    if idk2 == '2':
         os.system('clear')
         os.system('john')
         johnstuff = input(
@@ -174,7 +155,7 @@ if first == '2':
         os.system('clear')
         os.system(johnstuff)
 
-    if idk2 == '4':
+    if idk2 == '3':
         os.system('clear')
         os.system('hydra -h')
         hydrastuff = input(
@@ -238,13 +219,35 @@ if first == '5':
         time.sleep(2)
         os.system('sudo wifite --dict ' + wquestion + ' --kill')
         
+# if answer is 6, start the wordlist generator menu
 if first == '6':
+    os.system('clear')
+    print(f'{bcolors.OKGREEN}Wordlist Generators:{bcolors.ENDC}')
+    print(f'\t{bcolors.OKCYAN}[1] Crunch\n\t[2] Cupp{bcolors.ENDC}')
+    idk6 = input('What tool would you like to use?:\n')
+
+    if idk6 == '1':
+
+        # if crunch is selected
+        os.system('clear')
+        crunchmin = input(
+            'What is the minimum amount of characters you would like to include in 1 password?: ')
+        crunchmax = input(
+            'What is the maximum amount of characters you would like to include in 1 password?: ')
+        crunchchar = input(
+            'What characters would you like to have in the wordlist? (i.e. abc123)?: ')
+        crunchname = input(
+            'What file would you like the wordlist to be stored in? (Please include the file extention)(i.e. wordlist.txt): ')
+        os.system('clear')
+        os.system('crunch ' + crunchmin + ' ' + crunchmax + ' ' + crunchchar + ' -o ' + crunchname)      
+        
+if first == '7':
     os.system('clear')
     print(f'{bcolors.OKGREEN}About:{bcolors.ENDC}')
     print(f'This collection of tools was made by J0K3RS-L4UGH\nLinks:\n{bcolors.UNDERLINE}https://github.com/J0K3RS-L4UGH\nhttps://j0k3rs-l4ugh.github.io/{bcolors.ENDC}')
     print('Bye')
 
 
-if first == '7':
+if first == '8':
     os.system('clear')
     print('Bye')
