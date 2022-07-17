@@ -1,6 +1,7 @@
 # Made by J0K3RS-L4UGH
 
 import os
+import time
 
 # already availiable tools:
 
@@ -16,11 +17,9 @@ import os
 # tools to add
 
 # aircrack-ng
-# wifite
 
 # types of tools to add
 
-# wifi hacking
 # wirless hacking
 
 # Classing the colored text
@@ -72,7 +71,7 @@ print(f'\t{bcolors.OKCYAN}Nmap\n\tWhoIs\n\tSherlock{bcolors.ENDC}')
 
 # Password Attacks
 print(f'{bcolors.OKGREEN}[2] Password Attacks{bcolors.ENDC}')
-print(f'\t{bcolors.OKCYAN}Crunch\n\tHashCat\n\tCupp{bcolors.ENDC}')
+print(f'\t{bcolors.OKCYAN}Crunch\n\tHashCat\n\tCupp\n\tJohn the Ripper\n\tHydra{bcolors.ENDC}')
 
 # Networking
 print(f'{bcolors.OKGREEN}[3] Networking{bcolors.ENDC}')
@@ -81,6 +80,10 @@ print(f'\t{bcolors.OKCYAN}Nmap\n\tNetCat{bcolors.ENDC}')
 # Web Hacking
 print(f'{bcolors.OKGREEN}[4] Web Hacking:{bcolors.ENDC}')
 print(f'\t{bcolors.OKCYAN}SQLMap{bcolors.ENDC}')
+
+# WiFi Hacking
+print(f'{bcolors.OKGREEN}[4] WiFi Hacking:{bcolors.ENDC}')
+print(f'\t{bcolors.OKCYAN}Wifite{bcolors.ENDC}')
 
 # About
 print(f'{bcolors.OKGREEN}[5] About{bcolors.ENDC}')
@@ -216,16 +219,29 @@ if first == '4':
     if idk4 == '1':
         os.system('clear')
         os.system('sqlmap -h')
-        squestion = input(
-            'What SQLMap command do you want to run? (Usage: sqlmap [website]):')
+        squestion = input('What SQLMap command do you want to run? (Usage: sqlmap [website]):\n')
         os.system(squestion)
 
+# if answer is 4, start the web hacking menu
+if first == '5':
+    os.system('clear')
+    print(f'{bcolors.OKGREEN}WiFi Hacking:{bcolors.ENDC}')
+    print(f'\t{bcolors.OKCYAN}[1] Wifite')
+    idk5 = input('What tool would you like to use?:\n')
 
+# if Wifite is selected
+    if idk5 == '1':
+        os.system('clear')
+        # os.system('wifite -h')
+        wquestion = input('What is the path to the wordlist you want to use? (/path/to/your/wordlist.txt):\n')
+        print('The command is:\nsudo wifite --dict ' + wquestion + ' --kill')
+        time.sleep(2)
+        os.system('sudo wifite --dict ' + wquestion + ' --kill')
+        
 if first == '5':
     os.system('clear')
     print(f'{bcolors.OKGREEN}About:{bcolors.ENDC}')
-    print(
-        f'This collection of tools was made by J0K3RS-L4UGH\nLinks:\n{bcolors.UNDERLINE}https://github.com/J0K3RS-L4UGH\nhttps://j0k3rs-l4ugh.github.io/{bcolors.ENDC}')
+    print(f'This collection of tools was made by J0K3RS-L4UGH\nLinks:\n{bcolors.UNDERLINE}https://github.com/J0K3RS-L4UGH\nhttps://j0k3rs-l4ugh.github.io/{bcolors.ENDC}')
     print('Bye')
 
 
