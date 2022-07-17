@@ -82,14 +82,14 @@ print(f'{bcolors.OKGREEN}[4] Web Hacking:{bcolors.ENDC}')
 print(f'\t{bcolors.OKCYAN}SQLMap{bcolors.ENDC}')
 
 # WiFi Hacking
-print(f'{bcolors.OKGREEN}[4] WiFi Hacking:{bcolors.ENDC}')
+print(f'{bcolors.OKGREEN}[5] WiFi Hacking:{bcolors.ENDC}')
 print(f'\t{bcolors.OKCYAN}Wifite{bcolors.ENDC}')
 
 # About
-print(f'{bcolors.OKGREEN}[5] About{bcolors.ENDC}')
+print(f'{bcolors.OKGREEN}[6] About{bcolors.ENDC}')
 
 # Exit
-print(f'{bcolors.OKGREEN}[6] Exit{bcolors.ENDC}')
+print(f'{bcolors.OKGREEN}[7] Exit{bcolors.ENDC}')
 
 # asking what type of tool they want to use
 first = input('What type of tool would you like to use?:\n')
@@ -222,7 +222,7 @@ if first == '4':
         squestion = input('What SQLMap command do you want to run? (Usage: sqlmap [website]):\n')
         os.system(squestion)
 
-# if answer is 4, start the web hacking menu
+# if answer is 5, start the web hacking menu
 if first == '5':
     os.system('clear')
     print(f'{bcolors.OKGREEN}WiFi Hacking:{bcolors.ENDC}')
@@ -238,13 +238,13 @@ if first == '5':
         time.sleep(2)
         os.system('sudo wifite --dict ' + wquestion + ' --kill')
         
-if first == '5':
+if first == '6':
     os.system('clear')
     print(f'{bcolors.OKGREEN}About:{bcolors.ENDC}')
     print(f'This collection of tools was made by J0K3RS-L4UGH\nLinks:\n{bcolors.UNDERLINE}https://github.com/J0K3RS-L4UGH\nhttps://j0k3rs-l4ugh.github.io/{bcolors.ENDC}')
     print('Bye')
 
 
-if first == '6':
+if first == '7':
     os.system('clear')
     print('Bye')
