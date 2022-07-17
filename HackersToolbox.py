@@ -20,8 +20,6 @@ import time
 
 # types of tools to add
 
-# wirless hacking
-
 # Classing the colored text
 
 
