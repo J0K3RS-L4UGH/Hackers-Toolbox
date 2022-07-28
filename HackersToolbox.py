@@ -241,7 +241,7 @@ if first == '6':
         
     if idk6 == '2':
         os.system('clear')
-        os.system('cupp -h')
+        os.system('cupp -i')
         
 if first == '7':
     os.system('clear')
