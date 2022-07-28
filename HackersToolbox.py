@@ -239,6 +239,10 @@ if first == '6':
         os.system('clear')
         os.system('crunch ' + crunchmin + ' ' + crunchmax + ' ' + crunchchar + ' -o ' + crunchname)      
         
+    if idk6 == '2':
+        os.system('clear')
+        os.system('cupp -h')
+        
 if first == '7':
     os.system('clear')
     print(f'{bcolors.OKGREEN}About:{bcolors.ENDC}')
