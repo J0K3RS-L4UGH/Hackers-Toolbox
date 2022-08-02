@@ -20,11 +20,11 @@ sudo apt-get install hydra -y
 
 sudo apt-get install wifite -y
 
-mkdir .sherlock
+sudo mkdir .sherlock
 cd .sherlock
-git clone https://github.com/sherlock-project/sherlock.git
+sudo git clone https://github.com/sherlock-project/sherlock.git
 cd sherlock
-pip3 install -r requirements.txt
-pip freeze > requirements.txt
+sudo pip3 install -r requirements.txt
 cd ..
 cd ..
+
