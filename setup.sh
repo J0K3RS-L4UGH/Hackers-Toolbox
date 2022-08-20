@@ -42,3 +42,4 @@ sudo pip3 install -r requirements.txt
 
 cd
 echo 'What is your shells config file? '
+
