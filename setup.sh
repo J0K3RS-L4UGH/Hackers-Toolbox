@@ -1,6 +1,6 @@
 echo 'What directory would you like Hackers Toolbox to be installed in? (for /bin press enter)' 
 read dir
-bin = ''
+bin=''
 
 if [ $dir == $bin]
 then
