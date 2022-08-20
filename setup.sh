@@ -1,3 +1,6 @@
+cd /bin
+git clone https://github.com/J0K3RS-L4UGH/Hackers-Toolbox.git
+
 sudo apt-get update && sudo apt-get upgrade
 
 sudo apt-get install whois -y
