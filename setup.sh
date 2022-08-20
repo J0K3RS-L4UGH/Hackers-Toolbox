@@ -9,7 +9,7 @@ else
   cd $dir
 fi
 
-git clone https://github.com/J0K3RS-L4UGH/Hackers-Toolbox.git
+sudo git clone https://github.com/J0K3RS-L4UGH/Hackers-Toolbox.git
 
 
 sudo apt-get update && sudo apt-get upgrade
