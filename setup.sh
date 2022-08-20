@@ -7,6 +7,7 @@ then
   cd /bin
 else
   cd $dir
+fi
 
 git clone https://github.com/J0K3RS-L4UGH/Hackers-Toolbox.git
 
