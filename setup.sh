@@ -1,5 +1,15 @@
-cd /bin
+echo 'What directory would you like Hackers Toolbox to be installed in? (for /bin press enter)' 
+read dir
+bin = ''
+
+if [ $dir == $bin]
+then
+  cd /bin
+else
+  cd $dir
+
 git clone https://github.com/J0K3RS-L4UGH/Hackers-Toolbox.git
+
 
 sudo apt-get update && sudo apt-get upgrade
 
@@ -28,6 +38,6 @@ cd .sherlock
 sudo git clone https://github.com/sherlock-project/sherlock.git
 cd sherlock
 sudo pip3 install -r requirements.txt
-cd ..
-cd ..
 
+cd
+echo 'What is your shells config file? '
