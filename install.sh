@@ -1,17 +1,3 @@
-echo 'What directory would you like Hackers Toolbox to be installed in? (for /bin press enter)' 
-read dir
-bin=""
-
-if [ $dir == $bin]
-then
-  cd /bin
-else
-  cd $dir
-fi
-
-sudo git clone https://github.com/J0K3RS-L4UGH/Hackers-Toolbox.git
-
-
 sudo apt-get update -y && sudo apt-get upgrade -y
 
 sudo apt-get install whois -y
@@ -49,9 +35,6 @@ read yn
 if [ $yn == $y ]
 then
  python3 HackersToolbox.py
-if [ $yn == $n ]
-then
-  echo 'Goodbye'
 else
-  python3 HackersToolbox.py
+  echo 'Thanks for installing!'
 fi
