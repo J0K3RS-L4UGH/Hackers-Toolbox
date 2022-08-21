@@ -50,5 +50,5 @@ then
   fi
 else
   cd ..
-  rm -r Hackers-Toolbox
+  sudo rm -r Hackers-Toolbox
 fi
