@@ -36,12 +36,13 @@ then
   sudo pip3 install -r requirements.txt
 
   cd ..
-
+  cd ..
+  
   y="y"
   n="n"
   echo "Would you like to run Hackers Toolbox (python3 HackersToolbox.py)? [y/n]:"
   read yn
-  if [ $yn == $y ]
+  if [ $yn = $y ]
   then
    python3 HackersToolbox.py
   else
