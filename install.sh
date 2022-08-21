@@ -49,6 +49,6 @@ then
     echo 'Thanks for installing!'
   fi
 else
-  cd ..
-  sudo rm -r Hackers-Toolbox
+  sudo rm -r HackersToolbox.py
+  echo 'Sorry'
 fi
