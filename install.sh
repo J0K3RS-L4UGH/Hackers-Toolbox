@@ -40,8 +40,18 @@ sudo git clone https://github.com/sherlock-project/sherlock.git
 cd sherlock
 sudo pip3 install -r requirements.txt
 
-cd
-echo 'What is your shells config file? '
+cd ..
 
-
-rm -r install.sh
+y="y"
+n="n"
+echo "Would you like to run Hackers Toolbox (python3 HackersToolbox.py)? [y/n]:"
+read yn
+if [ $yn == $y ]
+then
+ python3 HackersToolbox.py
+if [ $yn == $n ]
+then
+  echo 'Goodbye'
+else
+  python3 HackersToolbox.py
+fi
