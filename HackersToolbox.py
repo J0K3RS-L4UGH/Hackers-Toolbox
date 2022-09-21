@@ -112,7 +112,7 @@ if first == '1':
         ncommand1 = input(
             'What Nmap command would you like to run? (Usage: nmap [Scan Type(s)] [Options] {target specification}):\n')
         os.system('clear')
-        os.system(ncommand1)
+        os.system('sudo' + ' ' + ncommand1)
 
 # if whois is selected
     if idk1 == '2':
@@ -121,14 +121,14 @@ if first == '1':
         whoisl = input(
             'What WhoIs command do you want to run? (Usage: whois [OPTION]... OBJECT...):\n')
         os.system('clear')
-        os.system(whoisl)
+        os.system('sudo' + ' ' + whoisl)
 
 # if sherlock is selected
     if idk1 == '3':
         username1 = input('What username would you like to search?:\n')
         os.system('clear')
         os.system(
-            'python3 ~/Hackers-Toolbox/.sherlock/sherlock/sherlock/sherlock.py' + ' ' + username1)
+            ''sudo' + ' ' + python3 ~/Hackers-Toolbox/.sherlock/sherlock/sherlock/sherlock.py' + ' ' + username1)
 
 # if answer is 2, start the password hacking menu
 if first == '2':
@@ -143,7 +143,7 @@ if first == '2':
         hashstuff = input(
             'What HashCat command would you like to run? (Usage: hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]...):\n')
         os.system('clear')
-        os.system(hashstuff)
+        os.system('sudo' + ' ' + hashstuff)
 
     if idk2 == '2':
         os.system('clear')
@@ -151,7 +151,7 @@ if first == '2':
         johnstuff = input(
             'What John the Ripper command would you like to run? (Usage: john [OPTIONS] [PASSWORD-FILES]):\n')
         os.system('clear')
-        os.system(johnstuff)
+        os.system('sudo' + ' ' + johnstuff)
 
     if idk2 == '3':
         os.system('clear')
@@ -159,7 +159,7 @@ if first == '2':
         hydrastuff = input(
             'What Hydra command would you like to run? (Usage: Syntax: hydra [[[-l LOGIN|-L FILE] [-p PASS|-P FILE]] | [-C FILE]] [-e nsr] [-o FILE] [-t TASKS] [-M FILE [-T TASKS]] [-w TIME] [-W TIME] [-f] [-s PORT] [-x MIN:MAX:CHARSET] [-c TIME] [-ISOuvVd46] [-m MODULE_OPT] [service://server[:PORT][/OPT]]):\n')
         os.system('clear')
-        os.system(hydrastuff)
+        os.system('sudo' + ' ' + hydrastuff)
 
 # if answer is 3, start the network hacking menu
 if first == '3':
@@ -176,7 +176,7 @@ if first == '3':
         ncommand2 = input(
             'What Nmap command would you like to run? (Usage: nmap [Scan Type(s)] [Options] {target specification}):\n')
         os.system('clear')
-        os.system(ncommand2)
+        os.system('sudo' + ' ' + ncommand2)
 
     # if netcat is selected
     if idk3 == '2':
@@ -185,7 +185,7 @@ if first == '3':
         ncommand3 = input(
             'What NetCat command do you want to run? usage: nc [-46CDdFhklNnrStUuvZz] [-I length] [-i interval] [-M ttl] [-m minttl] [-O length] [-P proxy_username] [-p source_port] [-q seconds] [-s sourceaddr] [-T keyword] [-V rtable] [-W recvlimit] [-w timeout] [-X proxy_protocol] [-x proxy_address[:port] [destination] [port]')
         os.system('clear')
-        os.system(ncommand3)
+        os.system('sudo' + ' ' + ncommand3)
 
 # if answer is 4, start the web hacking menu
 if first == '4':
@@ -199,7 +199,7 @@ if first == '4':
         os.system('clear')
         os.system('sqlmap -h')
         squestion = input('What SQLMap command do you want to run? (Usage: sqlmap [website]):\n')
-        os.system(squestion)
+        os.system('sudo' + ' ' + squestion)
 
 # if answer is 5, start the web hacking menu
 if first == '5':
@@ -237,11 +237,11 @@ if first == '6':
         crunchname = input(
             'What file would you like the wordlist to be stored in? (Please include the file extention)(i.e. wordlist.txt): ')
         os.system('clear')
-        os.system('crunch ' + crunchmin + ' ' + crunchmax + ' ' + crunchchar + ' -o ' + crunchname)      
+        os.system('sudo' + ' ' + 'crunch ' + crunchmin + ' ' + crunchmax + ' ' + crunchchar + ' -o ' + crunchname)      
         
     if idk6 == '2':
         os.system('clear')
-        os.system('cupp -i')
+        os.system('sudo' + ' ' + 'cupp -i')
         
 if first == '7':
     os.system('clear')
