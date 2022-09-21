@@ -128,7 +128,7 @@ if first == '1':
         username1 = input('What username would you like to search?:\n')
         os.system('clear')
         os.system(
-            ''sudo' + ' ' + python3 ~/Hackers-Toolbox/.sherlock/sherlock/sherlock/sherlock.py' + ' ' + username1)
+            'python3 ~/Hackers-Toolbox/.sherlock/sherlock/sherlock/sherlock.py' + ' ' + username1)
 
 # if answer is 2, start the password hacking menu
 if first == '2':
