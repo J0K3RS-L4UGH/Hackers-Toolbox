@@ -69,11 +69,11 @@ print(f'\t{bcolors.OKCYAN}Nmap\n\tWhoIs\n\tSherlock{bcolors.ENDC}')
 
 # Password Attacks
 print(f'{bcolors.OKGREEN}[2] Password Attacks{bcolors.ENDC}')
-print(f'\t{bcolors.OKCYAN}Crunch\n\tHashCat\n\tCupp\n\tJohn the Ripper\n\tHydra{bcolors.ENDC}')
+print(f'\t{bcolors.OKCYAN}HashCat\n\tJohn the Ripper\n\tHydra{bcolors.ENDC}')
 
 # Networking
 print(f'{bcolors.OKGREEN}[3] Networking{bcolors.ENDC}')
-print(f'\t{bcolors.OKCYAN}Nmap\n\tNetCat{bcolors.ENDC}')
+print(f'\t{bcolors.OKCYAN}Nmap\n\tNetCat\n\tTShark{bcolors.ENDC}')
 
 # Web Hacking
 print(f'{bcolors.OKGREEN}[4] Web Hacking:{bcolors.ENDC}')
@@ -166,7 +166,7 @@ if first == '3':
     os.system('clear')
     print(f'{bcolors.OKGREEN}Networking:{bcolors.ENDC}')
     print(f'\t{bcolors.OKCYAN}[1] Nmap')
-    print(f'\t[2] NetCat{bcolors.ENDC}')
+    print(f'\t[2] NetCat\n\t[3] TShark{bcolors.ENDC}')
     idk3 = input('What tool would you like to use?:\n')
 
 # if nmap is selected
@@ -183,9 +183,17 @@ if first == '3':
         os.system('clear')
         os.system('netcat -h')
         ncommand3 = input(
-            'What NetCat command do you want to run? usage: nc [-46CDdFhklNnrStUuvZz] [-I length] [-i interval] [-M ttl] [-m minttl] [-O length] [-P proxy_username] [-p source_port] [-q seconds] [-s sourceaddr] [-T keyword] [-V rtable] [-W recvlimit] [-w timeout] [-X proxy_protocol] [-x proxy_address[:port] [destination] [port]')
+            'What NetCat command do you want to run? usage: nc [-46CDdFhklNnrStUuvZz] [-I length] [-i interval] [-M ttl] [-m minttl] [-O length] [-P proxy_username] [-p source_port] [-q seconds] [-s sourceaddr] [-T keyword] [-V rtable] [-W recvlimit] [-w timeout] [-X proxy_protocol] [-x proxy_address[:port] [destination] [port]:\n')
         os.system('clear')
         os.system('sudo' + ' ' + ncommand3)
+    
+    if idk3 == '3':
+        os.system('clear')
+        os.system('tshark -h')
+        ts = input(
+            'What TShark command do you want to run? usage : tshark [options]:\n')
+        os.system('clear')
+        os.system('sudo' + ' ' + ts)
 
 # if answer is 4, start the web hacking menu
 if first == '4':
