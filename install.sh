@@ -28,6 +28,8 @@ then
   sudo apt-get install hydra -y
 
   sudo apt-get install wifite -y
+  
+  sudo apt-get install tshark -y
 
   sudo mkdir .sherlock
   cd .sherlock
