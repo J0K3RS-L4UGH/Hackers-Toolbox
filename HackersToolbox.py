@@ -77,7 +77,7 @@ print(f'\t{bcolors.OKCYAN}Nmap\n\tNetCat\n\tTShark{bcolors.ENDC}')
 
 # Web Hacking
 print(f'{bcolors.OKGREEN}[4] Web Hacking:{bcolors.ENDC}')
-print(f'\t{bcolors.OKCYAN}SQLMap{bcolors.ENDC}')
+print(f'\t{bcolors.OKCYAN}[1] SQLMap\n\t[2] Hakrawler{bcolors.ENDC}')
 
 # WiFi Hacking
 print(f'{bcolors.OKGREEN}[5] WiFi Hacking:{bcolors.ENDC}')
