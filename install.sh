@@ -29,7 +29,11 @@ then
 
   sudo apt-get install wifite -y
   
+  sudo apt-get install golang -y
+  
   sudo apt-get install tshark -y
+
+  go get github.com/hakluke/hakrawler@latest
 
   sudo mkdir .sherlock
   cd .sherlock
