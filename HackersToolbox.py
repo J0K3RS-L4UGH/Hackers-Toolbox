@@ -212,8 +212,7 @@ if first == '4':
 # if hakrawler is selected
     if idk4 == '2':
         os.system('clear')
-        os.system('sqlmap -h')
-        krawlurl = input('What URL do you want to crawl (i.e. https://example.com/):\n')
+        krawlurl = input('What URL do you want to crawl (i.e. https://www.example.com/):\n')
         os.system('echo ' + krawlurl + ' | ~/go/bin/hakrawler')    
     
 
