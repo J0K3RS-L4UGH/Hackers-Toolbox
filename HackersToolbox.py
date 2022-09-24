@@ -199,7 +199,7 @@ if first == '3':
 if first == '4':
     os.system('clear')
     print(f'{bcolors.OKGREEN}Web Hacking:{bcolors.ENDC}')
-    print(f'\t{bcolors.OKCYAN}[1] SQLMap')
+    print(f'\t{bcolors.OKCYAN}[1] SQLMap\n\t[2] Hakrawler')
     idk4 = input('What tool would you like to use?:\n')
 
 # if SQLMap is selected
@@ -208,6 +208,14 @@ if first == '4':
         os.system('sqlmap -h')
         squestion = input('What SQLMap command do you want to run? (Usage: sqlmap [website]):\n')
         os.system('sudo' + ' ' + squestion)
+
+# if hakrawler is selected
+    if idk4 == '2':
+        os.system('clear')
+        os.system('sqlmap -h')
+        krawlurl = input('What URL do you want to crawl (i.e. https://example.com/):\n')
+        os.system('echo ' + krawlurl + ' | ~/go/bin/hakrawler')    
+    
 
 # if answer is 5, start the web hacking menu
 if first == '5':
