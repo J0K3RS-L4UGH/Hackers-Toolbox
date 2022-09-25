@@ -199,7 +199,7 @@ if first == '3':
 if first == '4':
     os.system('clear')
     print(f'{bcolors.OKGREEN}Web Hacking:{bcolors.ENDC}')
-    print(f'\t{bcolors.OKCYAN}[1] SQLMap\n\t[2] Hakrawler')
+    print(f'\t{bcolors.OKCYAN}[1] SQLMap\n\t[2] Hakrawler{bcolors.ENDC}')
     idk4 = input('What tool would you like to use?:\n')
 
 # if SQLMap is selected
