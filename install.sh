@@ -33,7 +33,7 @@ then
   
   sudo apt-get install tshark -y
 
-  go get github.com/hakluke/hakrawler@latest
+  go get github.com/hakluke/hakrawler
 
   sudo mkdir .sherlock
   cd .sherlock
