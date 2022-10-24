@@ -32,6 +32,8 @@ then
   sudo apt-get install golang -y
   
   sudo apt-get install tshark -y
+  
+  sudo apt-get install steghide -y
 
   go get github.com/hakluke/hakrawler
 
