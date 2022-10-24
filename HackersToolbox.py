@@ -87,11 +87,15 @@ print(f'\t{bcolors.OKCYAN}Wifite{bcolors.ENDC}')
 print(f'{bcolors.OKGREEN}[6] Wordlist Generators:{bcolors.ENDC}')
 print(f'\t{bcolors.OKCYAN}Crunch\n\tCupp{bcolors.ENDC}')
 
+# wordlist gens
+print(f'{bcolors.OKGREEN}[7] Image Hacking:{bcolors.ENDC}')
+print(f'\t{bcolors.OKCYAN}Steghide{bcolors.ENDC}')
+
 # About
-print(f'{bcolors.OKGREEN}[7] About{bcolors.ENDC}')
+print(f'{bcolors.OKGREEN}[8] About{bcolors.ENDC}')
 
 # Exit
-print(f'{bcolors.OKGREEN}[8] Exit{bcolors.ENDC}')
+print(f'{bcolors.OKGREEN}[9] Exit{bcolors.ENDC}')
 
 # asking what type of tool they want to use
 first = input('What type of tool would you like to use?:\n')
@@ -260,11 +264,22 @@ if first == '6':
         
 if first == '7':
     os.system('clear')
+    print(f'{bcolors.OKGREEN}Image Hacking:{bcolors.ENDC}')
+    print(f'\t{bcolors.OKCYAN}[1] Steghide{bcolors.ENDC}')
+    idk6 = input('What tool would you like to use?:\n')
+
+    if idk6 == '1':
+        print('To embed emb.txt in cvr.jpg: steghide embed -cf cvr.jpg -ef emb.txt\nTo extract embedded data from stg.jpg: steghide extract -sf stg.jpg')
+        whtimg == input('What steghide command do you want to run?:\n')
+        os.system('sudo ' + whtimg)
+        
+if first == '8':
+    os.system('clear')
     print(f'{bcolors.OKGREEN}About:{bcolors.ENDC}')
     print(f'This collection of tools was made by J0K3RS-L4UGH\nLinks:\n{bcolors.UNDERLINE}https://github.com/J0K3RS-L4UGH\nhttps://j0k3rs-l4ugh.github.io/{bcolors.ENDC}')
     print('Bye')
 
 
-if first == '8':
+if first == '9':
     os.system('clear')
     print('Bye')
