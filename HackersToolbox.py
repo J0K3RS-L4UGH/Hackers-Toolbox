@@ -270,7 +270,7 @@ if first == '7':
 
     if idk6 == '1':
         print('To embed emb.txt in cvr.jpg: steghide embed -cf cvr.jpg -ef emb.txt\nTo extract embedded data from stg.jpg: steghide extract -sf stg.jpg')
-        whtimg == input('What steghide command do you want to run?:\n')
+        whtimg = input('What steghide command do you want to run?:\n')
         os.system('sudo ' + whtimg)
         
 if first == '8':
