@@ -45,13 +45,7 @@ then
   
   cd ..
   cd ..
-  
-  sudo mkdir .payduck
-  cd .payduck
-  sudo git clone https://github.com/J0K3RS-L4UGH/PayDuck.git
 
-  cd ..
-  
   y="y"
   n="n"
   echo "Would you like to run Hackers Toolbox (python3 HackersToolbox.py)? [y/n]:"
