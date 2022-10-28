@@ -42,8 +42,14 @@ then
   sudo git clone https://github.com/sherlock-project/sherlock.git
   cd sherlock
   sudo pip3 install -r requirements.txt
-
+  
   cd ..
+  cd ..
+  
+  sudo mkdir .payduck
+  cd .payduck
+  sudo git clone https://github.com/J0K3RS-L4UGH/PayDuck.git
+
   cd ..
   
   y="y"
