@@ -241,9 +241,9 @@ if tooltype == '6':
     os.system('clear')
     print(f'{bcolors.OKGREEN}Wordlist Generators:{bcolors.ENDC}')
     print(f'\t{bcolors.OKCYAN}[1] Crunch\n\t[2] Cupp{bcolors.ENDC}')
-    idk6 = input('What tool would you like to use?:\n')
+    wordgen = input('What tool would you like to use?:\n')
 
-    if idk6 == '1':
+    if wordgen == '1':
 
         # if crunch is selected
         os.system('clear')
@@ -258,7 +258,7 @@ if tooltype == '6':
         os.system('clear')
         os.system('sudo' + ' ' + 'crunch ' + crunchmin + ' ' + crunchmax + ' ' + crunchchar + ' -o ' + crunchname)      
         
-    if idk6 == '2':
+    if wordgen == '2':
         os.system('clear')
         os.system('sudo' + ' ' + 'cupp -i')
         
@@ -266,9 +266,9 @@ if tooltype == '7':
     os.system('clear')
     print(f'{bcolors.OKGREEN}Image Hacking:{bcolors.ENDC}')
     print(f'\t{bcolors.OKCYAN}[1] Steghide{bcolors.ENDC}')
-    idk6 = input('What tool would you like to use?:\n')
+    imghak = input('What tool would you like to use?:\n')
 
-    if idk6 == '1':
+    if imghak == '1':
         print('To embed emb.txt in cvr.jpg: steghide embed -cf cvr.jpg -ef emb.txt\nTo extract embedded data from stg.jpg: steghide extract -sf stg.jpg')
         whtimg = input('What steghide command do you want to run?:\n')
         os.system('sudo ' + whtimg)
