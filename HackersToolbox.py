@@ -98,19 +98,19 @@ print(f'{bcolors.OKGREEN}[8] About{bcolors.ENDC}')
 print(f'{bcolors.OKGREEN}[9] Exit{bcolors.ENDC}')
 
 # asking what type of tool they want to use
-first = input('What type of tool would you like to use?:\n')
+tooltype = input('What type of tool would you like to use?:\n')
 
 # if the answer is 1, start the info gathering menu
-if first == '1':
+if tooltype == '1':
     os.system('clear')
     print(f'{bcolors.OKGREEN}Information Gathering:{bcolors.ENDC}')
     print(f'\t{bcolors.OKCYAN}[1] Nmap')
     print(f'\t[2] WhoIs')
     print(f'\t[3] Sherlock{bcolors.ENDC}')
-    idk1 = input('What tool would you like to use?:\n')
+    infogath = input('What tool would you like to use?:\n')
 
 # if nmap is selected
-    if idk1 == '1':
+    if infogath == '1':
         os.system('clear')
         os.system('nmap -h')
         ncommand1 = input(
@@ -119,7 +119,7 @@ if first == '1':
         os.system('sudo' + ' ' + ncommand1)
 
 # if whois is selected
-    if idk1 == '2':
+    if infogath == '2':
         os.system('clear')
         os.system('whois -h')
         whoisl = input(
@@ -128,28 +128,28 @@ if first == '1':
         os.system('sudo' + ' ' + whoisl)
 
 # if sherlock is selected
-    if idk1 == '3':
+    if infogath == '3':
         username1 = input('What username would you like to search?:\n')
         os.system('clear')
         os.system(
             'python3 ~/Hackers-Toolbox/.sherlock/sherlock/sherlock/sherlock.py' + ' ' + username1)
 
 # if answer is 2, start the password hacking menu
-if first == '2':
+if tooltype == '2':
     os.system('clear')
     print(f'{bcolors.OKGREEN}Password Attacks:{bcolors.ENDC}')
     print(f'\t{bcolors.OKCYAN}[1] HashCat\n\t[2] John the Ripper\n\t[3] Hydra{bcolors.ENDC}')
-    idk2 = input('What tool would you like to use?:\n')
+    attkpasswd = input('What tool would you like to use?:\n')
 
 # if hashcat is selected
-    if idk2 == '1':
+    if attkpasswd == '1':
         os.system('clear')
         hashstuff = input(
             'What HashCat command would you like to run? (Usage: hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]...):\n')
         os.system('clear')
         os.system('sudo' + ' ' + hashstuff)
 
-    if idk2 == '2':
+    if attkpasswd == '2':
         os.system('clear')
         os.system('john')
         johnstuff = input(
@@ -157,7 +157,7 @@ if first == '2':
         os.system('clear')
         os.system('sudo' + ' ' + johnstuff)
 
-    if idk2 == '3':
+    if attkpasswd == '3':
         os.system('clear')
         os.system('hydra -h')
         hydrastuff = input(
@@ -166,15 +166,15 @@ if first == '2':
         os.system('sudo' + ' ' + hydrastuff)
 
 # if answer is 3, start the network hacking menu
-if first == '3':
+if tooltype == '3':
     os.system('clear')
     print(f'{bcolors.OKGREEN}Networking:{bcolors.ENDC}')
     print(f'\t{bcolors.OKCYAN}[1] Nmap')
     print(f'\t[2] NetCat\n\t[3] TShark{bcolors.ENDC}')
-    idk3 = input('What tool would you like to use?:\n')
+    netwkhak = input('What tool would you like to use?:\n')
 
 # if nmap is selected
-    if idk3 == '1':
+    if netwkhak == '1':
         os.system('clear')
         os.system('nmap -h')
         ncommand2 = input(
@@ -183,7 +183,7 @@ if first == '3':
         os.system('sudo' + ' ' + ncommand2)
 
     # if netcat is selected
-    if idk3 == '2':
+    if netwkhak == '2':
         os.system('clear')
         os.system('netcat -h')
         ncommand3 = input(
@@ -191,7 +191,7 @@ if first == '3':
         os.system('clear')
         os.system('sudo' + ' ' + ncommand3)
     
-    if idk3 == '3':
+    if netwkhak == '3':
         os.system('clear')
         os.system('tshark -h')
         ts = input(
@@ -200,44 +200,44 @@ if first == '3':
         os.system('sudo' + ' ' + ts)
 
 # if answer is 4, start the web hacking menu
-if first == '4':
+if tooltype == '4':
     os.system('clear')
     print(f'{bcolors.OKGREEN}Web Hacking:{bcolors.ENDC}')
     print(f'\t{bcolors.OKCYAN}[1] SQLMap\n\t[2] Hakrawler{bcolors.ENDC}')
-    idk4 = input('What tool would you like to use?:\n')
+    webhak = input('What tool would you like to use?:\n')
 
 # if SQLMap is selected
-    if idk4 == '1':
+    if webhak == '1':
         os.system('clear')
         os.system('sqlmap -h')
         squestion = input('What SQLMap command do you want to run? (Usage: sqlmap [website]):\n')
         os.system('sudo' + ' ' + squestion)
 
 # if hakrawler is selected
-    if idk4 == '2':
+    if webhak == '2':
         os.system('clear')
         krawlurl = input('What URL do you want to crawl (i.e. https://www.example.com/):\n')
         os.system('echo ' + krawlurl + ' | ~/go/bin/hakrawler')    
     
 
-# if answer is 5, start the web hacking menu
-if first == '5':
+# if answer is 5, start the wifi hacking menu
+if tooltype == '5':
     os.system('clear')
     print(f'{bcolors.OKGREEN}WiFi Hacking:{bcolors.ENDC}')
     print(f'\t{bcolors.OKCYAN}[1] Wifite')
-    idk5 = input('What tool would you like to use?:\n')
+    wifihak = input('What tool would you like to use?:\n')
 
 # if Wifite is selected
-    if idk5 == '1':
+    if wifihak == '1':
         os.system('clear')
         # os.system('wifite -h')
-        wquestion = input('What is the path to the wordlist you want to use? (/path/to/your/wordlist.txt):\n')
-        print('The command is:\nsudo wifite --dict ' + wquestion + ' --kill')
+        wifitequestion = input('What is the path to the wordlist you want to use? (/path/to/your/wordlist.txt):\n')
+        print('The command is:\nsudo wifite --dict ' + wifitequestion + ' --kill')
         time.sleep(2)
-        os.system('sudo wifite --dict ' + wquestion + ' --kill')
+        os.system('sudo wifite --dict ' + wifitequestion + ' --kill')
         
 # if answer is 6, start the wordlist generator menu
-if first == '6':
+if tooltype == '6':
     os.system('clear')
     print(f'{bcolors.OKGREEN}Wordlist Generators:{bcolors.ENDC}')
     print(f'\t{bcolors.OKCYAN}[1] Crunch\n\t[2] Cupp{bcolors.ENDC}')
@@ -262,7 +262,7 @@ if first == '6':
         os.system('clear')
         os.system('sudo' + ' ' + 'cupp -i')
         
-if first == '7':
+if tooltype == '7':
     os.system('clear')
     print(f'{bcolors.OKGREEN}Image Hacking:{bcolors.ENDC}')
     print(f'\t{bcolors.OKCYAN}[1] Steghide{bcolors.ENDC}')
@@ -273,13 +273,13 @@ if first == '7':
         whtimg = input('What steghide command do you want to run?:\n')
         os.system('sudo ' + whtimg)
         
-if first == '8':
+if tooltype == '8':
     os.system('clear')
     print(f'{bcolors.OKGREEN}About:{bcolors.ENDC}')
     print(f'This collection of tools was made by J0K3RS-L4UGH\nLinks:\n{bcolors.UNDERLINE}https://github.com/J0K3RS-L4UGH\nhttps://j0k3rs-l4ugh.github.io/{bcolors.ENDC}')
     print('Bye')
 
 
-if first == '9':
+if tooltype == '9':
     os.system('clear')
     print('Bye')
