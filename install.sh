@@ -35,6 +35,8 @@ then
   
   sudo apt-get install steghide -y
 
+  sudo apt-get install bully -y
+
   go get github.com/hakluke/hakrawler
 
   sudo mkdir .sherlock
