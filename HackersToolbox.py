@@ -91,11 +91,16 @@ print(f'\t{bcolors.OKCYAN}Crunch\n\tCupp{bcolors.ENDC}')
 print(f'{bcolors.OKGREEN}[7] Image Hacking:{bcolors.ENDC}')
 print(f'\t{bcolors.OKCYAN}Steghide{bcolors.ENDC}')
 
+# duckyscript
+print(f'{bcolors.OKGREEN}[8] BadUSB:{bcolors.ENDC}')
+print(f'\t{bcolors.OKCYAN}PayDuck (Make a DuckyScript payload from a wordlist){bcolors.ENDC}')
+
+
 # About
-print(f'{bcolors.OKGREEN}[8] About{bcolors.ENDC}')
+print(f'{bcolors.OKGREEN}[A] About{bcolors.ENDC}')
 
 # Exit
-print(f'{bcolors.OKGREEN}[9] Exit{bcolors.ENDC}')
+print(f'{bcolors.OKGREEN}[E] Exit{bcolors.ENDC}')
 
 # asking what type of tool they want to use
 tooltype = input('What type of tool would you like to use?:\n')
@@ -275,11 +280,30 @@ if tooltype == '7':
         
 if tooltype == '8':
     os.system('clear')
+    print(f'{bcolors.OKGREEN}BadUSBs:{bcolors.ENDC}')
+    print(f'\t{bcolors.OKCYAN}[1] PayDuck\n\t[2] Cupp{bcolors.ENDC}')
+    ducktool = input('What tool would you like to use?:\n')
+
+    if ducktool == '1':
+
+        # if crunch is selected
+        os.system('clear')
+        wordlistfile = input(
+            'Where is the wordlist you want to use located (/path/to/wordlist.txt)?: ')
+        outputfile = input(
+            'Where would you like to store the output file (/path/to/output.txt) ')
+        pausetime = input(
+            'What is the pause time you would like between writing the passwords (in milliseconds): ')
+        os.system('clear')
+        os.system('sudo' + ' ' + 'python3 .payduck' + wordlistfile + ' ' + outputfile + ' --break_time ' + pausetime)      
+        
+if tooltype == 'A':
+    os.system('clear')
     print(f'{bcolors.OKGREEN}About:{bcolors.ENDC}')
     print(f'This collection of tools was made by J0K3RS-L4UGH\nLinks:\n{bcolors.UNDERLINE}https://github.com/J0K3RS-L4UGH\nhttps://j0k3rs-l4ugh.github.io/{bcolors.ENDC}')
     print('Bye')
 
 
-if tooltype == '9':
+if tooltype == 'E':
     os.system('clear')
     print('Bye')
