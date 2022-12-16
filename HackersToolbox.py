@@ -281,7 +281,7 @@ if tooltype == '7':
 if tooltype == '8':
     os.system('clear')
     print(f'{bcolors.OKGREEN}BadUSBs:{bcolors.ENDC}')
-    print(f'\t{bcolors.OKCYAN}[1] PayDuck\n\t[2] Cupp{bcolors.ENDC}')
+    print(f'\t{bcolors.OKCYAN}[1] PayDuck{bcolors.ENDC}')
     ducktool = input('What tool would you like to use?:\n')
 
     if ducktool == '1':
