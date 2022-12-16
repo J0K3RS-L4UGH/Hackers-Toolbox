@@ -47,6 +47,12 @@ then
   
   cd ..
   cd ..
+  
+  sudo mkdir .payduck
+  cd .payduck
+  sudo git clone https://github.com/J0K3RS-L4UGH/PayDuck/
+  
+  cd ..
 
   y="y"
   n="n"
