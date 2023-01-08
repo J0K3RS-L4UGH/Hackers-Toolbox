@@ -2,6 +2,7 @@
 A collection of tools for ethical/white hat hackers.    
 **Please do not use for malicious purposes.**  
 **Please check how legal these tools are in your country.**  
+**The creator of this does not take liability for anything this is used for**
 
 ## Thank you to everyone who made these tools.
 
@@ -10,24 +11,44 @@ A collection of tools for ethical/white hat hackers.
 2. To install this in terminal, use the command ```git clone https://github.com/J0K3RS-L4UGH/Hackers-Toolbox``` 
 3. To install all the required packages, use the commands ```cd Hackers-Toolbox``` ```chmod +x install.sh```, then run ```./install.sh```
 4. To run, paste ```python3 HackersToolbox.py``` into the CLI
-5. reccomended- add ```python3 ~/Hackers-Toolbox/HackersToolbox.py``` to your shells config file
+Optional: edit run.cpp so the path in line 4 is the path to the ```HackersToolbox.py``` file in the cloned directory. Then run ```g++ run.cpp -o RunHackersToolbox``` and ```mv RunHackersToolbox /bin```
+
+If you followed the optional step, you should be able to run ``RunHackersToolbox``` and it will start.
+
+
 
 Tools:
+
   Steghide
+
   PayDuck
+
   Crunch
+
   Cupp
+
   Wifite
+
   SQLMap
+
   Hakrawler
+
   Nmap
+
   WhoIs
+
   Sherlock
+
   HashCat
+
   John the Ripper
+
   Hydra
+
   Nmap
+
   WhoIs
+
   Sherlock
 
 Screenshot:
