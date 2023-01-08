@@ -13,7 +13,7 @@ A collection of tools for ethical/white hat hackers.
 4. To run, paste ```python3 HackersToolbox.py``` into the CLI
 5. (Optional): edit run.cpp so the path in line 4 is the path to the ```HackersToolbox.py``` file in the cloned directory. Then run ```g++ run.cpp -o RunHackersToolbox``` and ```mv RunHackersToolbox /bin```
 
-If you followed step 5, you should be able to run ``RunHackersToolbox``` and it will start.
+If you followed step 5, you should be able to use the command ```RunHackersToolbox``` and it will start.
 
 
 
