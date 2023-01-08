@@ -1,5 +1,5 @@
 #include <iostream>
 
 int main() {
-  system("python3 /lib/Hackers-Toolbox/HackersToolbox.py");
+  system("sudo python3 /lib/Hackers-Toolbox/HackersToolbox.py");
 }
