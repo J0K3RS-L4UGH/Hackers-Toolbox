@@ -1,6 +1,6 @@
 # Hackers-Toolbox
 A collection of tools for ethical/white hat hackers.    
-**Please do not use for malicious purposes.**  
+**FOR REASERCH PURPOSES ONLY.**  
 **Please check how legal these tools are in your country.**  
 **The creator of this does not take liability for anything this is used for**
 
